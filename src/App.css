@@ -4,3 +4,62 @@
   padding: 0;
   font-family: 'Raleway', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.App {
+  height: 100vh;
+  width: auto;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  position: relative;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.landing-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  position: absolute;
+  margin: calc(40vh - 80px) 25vw;
+  height: 20vh;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.landing-body.text {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.content-wrapper {
+  margin-top: calc(100vh - 80px);
+  z-index: 0;
+}
+
+@media screen and (max-width: 960px) {
+}

@@ -1,28 +1,33 @@
 const menuItems = [
   {
     title: 'Home',
-    url: '#',
-    className: 'nav-links',
+    url: '#home',
+    inactiveClassName: 'nav-links',
+    activeClassName: 'nav-links home',
   },
   {
     title: 'About',
-    url: '#',
-    className: 'nav-links',
+    url: '#about',
+    inactiveClassName: 'nav-links',
+    activeClassName: 'nav-links about',
   },
   {
     title: 'Projects',
-    url: '#',
-    className: 'nav-links',
+    url: '#projects',
+    inactiveClassName: 'nav-links',
+    activeClassName: 'nav-links projects',
   },
   {
     title: 'Blog',
-    url: '#',
-    className: 'nav-links',
+    url: '#blog',
+    inactiveClassName: 'nav-links',
+    activeClassName: 'nav-links blog',
   },
   {
     title: 'Contact',
     url: '#',
-    className: 'nav-links-mobile',
+    inactiveClassName: 'nav-links-mobile',
+    activeClassName: 'nav-links-mobile',
   },
 ];
 
