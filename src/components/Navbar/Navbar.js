@@ -4,9 +4,11 @@ import './Navbar.css';
 import { Button } from './Button';
 
 function Navbar() {
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState('');
   const [navbar, setNavbar] = useState(false);
   const [tab, setTab] = useState('');
+  const [hasBeenClicked, setHasBeenClicked] = useState(false);
+  let navDisplay = hasBeenClicked ? {} : { display: 'none' };
 
   const changeBackground = () => {
     if (window.scrollY >= 80) setNavbar(true);
@@ -67,11 +69,20 @@ function Navbar() {
           <i className="fab fa-twitter-square"> </i>
         </a>
       </h1>
-      <div className="menu-icon" onClick={() => setClicked(!clicked)}>
+      <div
+        className="menu-icon"
+        onClick={() => {
+          setClicked(!clicked);
+          setHasBeenClicked(true);
+        }}
+      >
         <i className={clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
       <div className="navbar-main">
-        <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
+        <ul
+          style={window.screen.width > 960 ? {} : navDisplay}
+          className={clicked ? 'nav-menu active' : 'nav-menu'}
+        >
           {menuItems.map((item, index) => {
             return (
               <li key={index}>

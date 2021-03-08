@@ -13,9 +13,7 @@ function App() {
         <div className="nav-wrapper">
           <Navbar />
         </div>
-        <div className="landing-body">
-          <div className="landing-body text">Software Solutions</div>
-        </div>
+        <div className="landing-body">Software Simplified</div>
         <div className="content-wrapper">
           <Home id="home" />
           <About id="about" />

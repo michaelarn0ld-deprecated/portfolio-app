@@ -96,6 +96,10 @@
 }
 
 @media screen and (max-width: 960px) {
+  .navbar-items {
+    font-size: 1rem;
+  }
+
   .navbar-background {
     opacity: 1;
   }
@@ -107,6 +111,24 @@
     position: relative;
   }
 
+  @keyframes mobile_menu_opening {
+    0% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes mobile_menu_closing {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-120%);
+    }
+  }
+
   .nav-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -115,15 +137,15 @@
     height: 500px;
     position: absolute;
     top: 80px;
-    left: -120%;
+    left: 0;
     opacity: 1;
     margin-top: 0px;
-    transition: 500ms;
+    animation: mobile_menu_closing 1s ease-in-out 0s 1 forwards;
   }
 
   .nav-menu.active {
-    left: 0;
     z-index: 1;
+    animation: mobile_menu_opening 1s ease-in-out 0s 1 forwards;
   }
 
   .nav-links {
@@ -152,8 +174,8 @@
     top: 0;
     right: 0;
     position: absolute;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    transform: translate(-120%, 90%);
+    font-size: 1.5rem;
     cursor: pointer;
   }
 
@@ -175,6 +197,10 @@
     background-color: #fff;
     color: #4facfe;
     transition: all 0.5s ease;
+  }
+
+  .fab {
+    margin: 4px;
   }
 
   Button {

@@ -40,14 +40,11 @@ html {
   height: 20vh;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 10px;
-}
-.landing-body.text {
-  color: white;
-  text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
   text-align: center;
-  padding: 1rem;
 }
 
 .nav-wrapper {
@@ -62,4 +59,7 @@ html {
 }
 
 @media screen and (max-width: 960px) {
+  .landing-body {
+    font-size: 1.4rem;
+  }
 }
