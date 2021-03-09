@@ -1,6 +1,25 @@
 .content-home-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  min-height: 150vh;
+  background: white;
+}
+
+.content-home-upper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background: chartreuse;
+}
+.content-home-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: red;
+}
+.content-home-lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: chartreuse;
 }

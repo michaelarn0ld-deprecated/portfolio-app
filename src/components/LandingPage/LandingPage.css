@@ -1,0 +1,111 @@
+/*  Styling for overall desktop landing page  */
+.content-landing-page-wrapper {
+  height: calc(100vh - 85px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+/* ******************************************************************************* */
+
+/* Styling for text component of the landing page */
+@keyframes text-load {
+  0% {
+    transform: translateY(-10vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.content-landing-page-text {
+  color: white;
+  border: 2px solid white;
+  padding: 2rem 6rem;
+  border-radius: 10px;
+  letter-spacing: 4px;
+  animation: text-load 2s forwards;
+  margin-bottom: 10vh;
+}
+/* ******************************************************************************* */
+
+/* Styling for arrow component of the landing page */
+@keyframes arrow-load {
+  0% {
+    transform: translateY(25vh);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(25vh);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(15vh);
+    opacity: 1;
+  }
+}
+
+.content-landing-page-arrow {
+  color: white;
+  transition: 0.5s;
+  animation: arrow-load 2s forwards;
+  font-size: 60%;
+  cursor: pointer;
+}
+
+.content-landing-page-arrow:hover {
+  color: rgba(0, 0, 0, 0.205);
+  transition: 0.5s;
+}
+/* ******************************************************************************* */
+
+/* End of desktop viewport styling */
+/* ******************************************************************************* */
+
+@media screen and (max-width: 960px) {
+  /*  Styling for overall mobile landing page  */
+  .content-landing-page-wrapper {
+    height: calc(100vh - 80px);
+    font-size: 2.5rem;
+  }
+  /* ******************************************************************************* */
+
+  /* Styling for mobile text component of the landing page */
+  .content-landing-page-text {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 2rem 2rem;
+    text-align: center;
+  }
+  /* ******************************************************************************* */
+
+  /* Styling for mobile arrow component of the landing page */
+  @keyframes arrow-load {
+    0% {
+      transform: translateY(25vh);
+      opacity: 0;
+    }
+
+    50% {
+      transform: translateY(25vh);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(10vh);
+      opacity: 1;
+    }
+  }
+
+  .content-landing-page-arrow {
+    font-size: 80%;
+  }
+  /* ******************************************************************************* */
+}
+/* End of mobile viewport styling */
+/* ******************************************************************************* */
