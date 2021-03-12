@@ -1,25 +1,148 @@
+/*  Home page flex-box setup and styling  */
 .content-home-wrapper {
-  display: grid;
-  grid-template-rows: 1fr 2fr 1fr;
-  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   background: white;
+  align-items: center;
+  justify-content: center;
+}
+.content-home-upper-content {
+  margin-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  align-items: center;
+}
+/* ******************************************************************************* */
+
+/* Home page header, image, and bio  */
+.content-home-upper-content > h1 {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 0 7px 5px 7px;
+  border-bottom: 2px solid black;
 }
 
-.content-home-upper {
+.content-home-image {
+  margin: 5vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background: chartreuse;
+  overflow: hidden;
+  width: 40vh;
+  height: 40vh;
+  border: 1px solid black;
+  border-radius: 50%;
 }
-.content-home-middle {
+
+.content-home-image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.content-home-upper-content > p {
+  margin-bottom: 5vh;
+  line-height: 200%;
+  text-align: center;
+}
+/* ******************************************************************************* */
+
+/* Home page summary box of interests */
+.content-home-lower-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 70vw;
+  min-height: 30vh;
+
+  border-radius: 20px;
+  margin-bottom: 5vh;
+  font-size: 2rem;
+}
+
+.content-home-lower-content > div > h4 {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.content-home-lower-one {
+  border-right: 2px solid black;
+  padding: 10%;
+  margin: 10% 0 10% 0;
+  grid-column: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background: red;
+  justify-content: center;
 }
-.content-home-lower {
+.content-home-lower-two {
+  border-right: 2px solid black;
+  padding: 10%;
+  margin: 10% 0 10% 0;
+  grid-column: 2;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background: chartreuse;
+  justify-content: center;
 }
+.content-home-lower-three {
+  border-right: 2px solid black;
+  padding: 10%;
+  margin: 10% 0 10% 0;
+  grid-column: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-home-lower-four {
+  grid-column: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* ******************************************************************************* */
+
+/* End of desktop viewport styling */
+/* ******************************************************************************* */
+
+@media screen and (max-width: 960px) {
+  /* Summary box styling for mobile viewing */
+  .content-home-lower-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-home-lower-content > div > h4 {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  /* ******************************************************************************* */
+
+  /* mobile summary box divider changes from right border to bottom border */
+  .content-home-lower-one {
+    border-right: none;
+    border-bottom: 2px solid black;
+    padding: 10%;
+    margin: 0 10% 0 10%;
+  }
+  .content-home-lower-two {
+    border-right: none;
+    border-bottom: 2px solid black;
+    padding: 10%;
+    margin: 0 10% 0 10%;
+  }
+  .content-home-lower-three {
+    border-right: none;
+    border-bottom: 2px solid black;
+    padding: 10%;
+    margin: 0 10% 0 10%;
+  }
+
+  .content-home-lower-four {
+    padding: 10%;
+    margin: 0 10% 0 10%;
+  }
+  /* ******************************************************************************* */
+}
+/* End of mobile viewport styling */
+/* ******************************************************************************* */

@@ -51,7 +51,7 @@
 }
 
 .content-landing-page-arrow {
-  color: white;
+  color: rgba(0, 0, 0, 0.247);
   transition: 0.5s;
   animation: arrow-load 2s forwards;
   font-size: 60%;
@@ -59,7 +59,7 @@
 }
 
 .content-landing-page-arrow:hover {
-  color: rgba(0, 0, 0, 0.205);
+  color: rgb(255, 255, 255);
   transition: 0.5s;
 }
 /* ******************************************************************************* */

@@ -1,8 +1,160 @@
+/*  About page setup flex box centering and stacking div items   */
 .content-about-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: black;
-  color: white;
+  min-height: 100vh;
+  background-color: rgb(231, 255, 255);
 }
+/* ******************************************************************************* */
+
+/* upper content contains header text for the page */
+.content-about-upper-content {
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 0 7px 5px 7px;
+  border-bottom: 2px solid black;
+}
+/* ******************************************************************************* */
+
+/* middle content contains large icons, keywords & short explanations  */
+.content-about-middle-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80vw;
+  min-height: 30vh;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+.content-about-middle-content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.content-about-middle-content > div > h1 {
+  font-size: 4rem;
+}
+.content-about-middle-content > div > h4 {
+  font-size: 2rem;
+  padding: 5px;
+  border-bottom: 2px solid black;
+}
+
+.content-about-middle-content > div > p {
+  margin-top: 2vh;
+  line-height: 200%;
+  text-align: center;
+}
+/* ******************************************************************************* */
+
+/* lower content contains header, icons & icon titles  */
+.content-about-lower-content {
+  display: grid;
+  grid-template-rows: 1fr 2fr 2fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-about-lower-content > h1 {
+  grid-row: 1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  padding: 0 7px 5px 7px;
+  border-bottom: 2px solid black;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content-about-lower-content > div {
+  font-size: 3rem;
+}
+
+.content-about-lower-content > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-about-lower-content > div > div > p {
+  font-size: 1rem;
+}
+
+.content-about-lower-content-one {
+  margin-top: 4vh;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.content-about-lower-content-two {
+  margin-top: 0;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* custom translation to align MongoDB text with others in same class */
+.shift-icon {
+  transform: translateY(10px);
+}
+/* ******************************************************************************* */
+
+/* End of desktop viewport styling */
+/* ******************************************************************************* */
+@media screen and (max-width: 960px) {
+  /*  About page setup to space on mobile view  */
+  .content-about-upper-content {
+    padding-top: 50px;
+  }
+  /* ******************************************************************************* */
+
+  /* rearrange the large icons from row to column for mobile view */
+  .content-about-middle-content {
+    display: flex;
+    flex-direction: column;
+  }
+  /* ******************************************************************************* */
+
+  /* adjust lower icons so they appear in two columns, 4 icons in each column */
+  .content-about-lower-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    padding-bottom: 0;
+  }
+
+  .content-about-lower-content > h1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    margin: 50px;
+  }
+
+  .content-about-lower-content > div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-about-lower-content > div > div {
+    padding: 30px;
+  }
+  /* notice how ..one and ..two are slightly different
+the centering was off so we had to manually adjust this */
+  .content-about-lower-content-one {
+    grid-column: 1;
+    grid-row: 2;
+    transform: translateY(calc(-7vh - 8px));
+  }
+  .content-about-lower-content-two {
+    grid-column: 2;
+    grid-row: 2;
+    transform: translateY(calc(-5vh - 10px));
+  }
+  /* ******************************************************************************* */
+}
+/* End of mobile viewport styling */
+/* ******************************************************************************* */

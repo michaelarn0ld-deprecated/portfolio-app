@@ -23,21 +23,44 @@ function Navbar() {
   // this highlights a tab on the navbar when we reach a certain page in the document
   const highlightNavbarTab = () => {
     if (
-      window.scrollY >= 0.8 * window.innerHeight &&
-      window.scrollY < 2.3 * window.innerHeight
+      window.scrollY >=
+        document.getElementById('home').getBoundingClientRect().top +
+          window.pageYOffset -
+          85 &&
+      window.scrollY <
+        document.getElementById('about').getBoundingClientRect().top +
+          window.pageYOffset -
+          85
     )
       setTab('Home');
     else if (
-      window.scrollY >= 2.3 * window.innerHeight &&
-      window.scrollY < 3.3 * window.innerHeight
+      window.scrollY >=
+        document.getElementById('about').getBoundingClientRect().top +
+          window.pageYOffset +
+          -85 &&
+      window.scrollY <
+        document.getElementById('projects').getBoundingClientRect().top +
+          window.pageYOffset -
+          85
     ) {
       setTab('About');
     } else if (
-      window.scrollY >= 3.3 * window.innerHeight &&
-      window.scrollY < 4.3 * window.innerHeight
+      window.scrollY >=
+        document.getElementById('projects').getBoundingClientRect().top +
+          window.pageYOffset -
+          85 &&
+      window.scrollY <
+        document.getElementById('blog').getBoundingClientRect().top +
+          window.pageYOffset -
+          85
     ) {
       setTab('Projects');
-    } else if (window.scrollY >= 4.3 * window.innerHeight) {
+    } else if (
+      window.scrollY >=
+      document.getElementById('blog').getBoundingClientRect().top +
+        window.pageYOffset -
+        85
+    ) {
       setTab('Blog');
     } else setTab('');
   };
@@ -107,6 +130,7 @@ function Navbar() {
                   to={item.id}
                   smooth={true}
                   duration={1000}
+                  offset={navbar ? -55 : -80}
                   onClick={() => {
                     setClicked(false);
                   }}
