@@ -18,10 +18,7 @@ const Home = ({ id }) => {
           eius voluptates, itaque facere minima eaque? Esse distinctio inventore
           alias qui quasi quos magnam soluta, nulla voluptatibus cum mollitia
           omnis adipisci aliquam animi modi, nihil tempora a. Incidunt
-          consectetur voluptatum eaque totam. Quas, tempore explicabo! Eaque
-          nemo a repudiandae magni, ad distinctio molestias, est fugiat magnam
-          voluptatem sunt placeat natus. Eos sit nulla perspiciatis blanditiis
-          in, quibusdam modi facilis odit fugit?
+          consectetur voluptatum eaque totam.
         </p>
       </div>
       <div className="content-home-lower-content">

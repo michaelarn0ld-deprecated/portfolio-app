@@ -38,7 +38,7 @@ const About = ({ id }) => {
         </div>
       </div>
       <div className="content-about-lower-content">
-        <h1>Tools of the trade</h1>
+        <h1>my toolbox</h1>
         <div className="content-about-lower-content-one">
           <div>
             <i class="fab fa-html5"></i>
