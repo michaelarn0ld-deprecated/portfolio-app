@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import img from '../../images/self-portrait.jpeg';
+import img from '../../images/professional-headshot.jpg';
 
 const Home = ({ id }) => {
   return (
@@ -26,7 +26,7 @@ const Home = ({ id }) => {
           <h1>
             <i class="fas fa-laptop-code"></i>
           </h1>
-          <h4>Fullstack Developer</h4>
+          <h4>Software Developer</h4>
         </div>
         <div className="content-home-lower-two">
           <h1>
