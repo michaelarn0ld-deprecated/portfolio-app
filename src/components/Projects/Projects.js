@@ -1,10 +1,52 @@
 import React from 'react';
-import './Projects.css';
+import './Projects.scss';
 
 const Projects = ({ id }) => {
   return (
     <div id={id} className="content-projects-wrapper">
-      <h1>Projects</h1>
+      <h1>projects</h1>
+      <div className="content-projects-items">
+        <div className="content-projects-one">
+          <div className="project-img"></div>
+          <div className="project-description">
+            <h1>
+              <i class="fas fa-cloud-sun-rain"></i>
+            </h1>
+            <h3>Weather Application</h3>
+          </div>
+          <div className="content-projects-one-live">
+            <h4>
+              This app utilizes a REST API to provide current and forecasted
+              weather conditions.
+            </h4>
+            <a
+              href="https://michaelarn0ld.github.io/weather-app/"
+              target="_blank"
+              className="navbar-left-media-links"
+            >
+              <h2>Visit Website </h2>
+            </a>
+          </div>
+        </div>
+        {/* -------------------------------------- */}
+        <div className="content-projects-two">
+          <div className="project-img"></div>
+        </div>
+        <div className="content-projects-three">
+          <div className="project-img"></div>
+        </div>
+      </div>
+      <div className="content-projects-items">
+        <div className="content-projects-one">
+          <div className="project-img"></div>
+        </div>
+        <div className="content-projects-two">
+          <div className="project-img"></div>
+        </div>
+        <div className="content-projects-three">
+          <div className="project-img"></div>
+        </div>
+      </div>
     </div>
   );
 };
