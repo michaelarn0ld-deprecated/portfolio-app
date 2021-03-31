@@ -76,29 +76,7 @@ function Navbar() {
         className={navbar ? 'navbar-background active' : 'navbar-background'}
       ></div>
       <h1 className="navbar-left" onClick={() => scroll.scrollToTop()}>
-        Michael Arnold
-        <a
-          href="https://github.com/michaelarn0ld"
-          target="_blank"
-          className="navbar-left-media-links"
-          style={{ marginLeft: 10 }}
-        >
-          <i className="fab fa-github"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/michaelarnoldcpp"
-          target="_blank"
-          className="navbar-left-media-links"
-        >
-          <i className="fab fa-linkedin"> </i>
-        </a>
-        <a
-          href="https://twitter.com/michaelarn0ld_"
-          target="_blank"
-          className="navbar-left-media-links"
-        >
-          <i className="fab fa-twitter-square"> </i>
-        </a>
+        <i class="fas fa-flask"></i>Michael Arnold
       </h1>
       <div
         className="mobile-menu-icon"

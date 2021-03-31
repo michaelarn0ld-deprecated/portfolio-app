@@ -85,6 +85,50 @@ function App() {
       { opacity: 0 },
       { opacity: 1, duration: 0.5, delay: 0.3 }
     );
+
+    // Scroll trigger rendering for the projects page
+    let timelineProjects = gsap.timeline({
+      scrollTrigger: {
+        trigger: element.querySelector('.content-projects-items-bin-one'),
+        start: 'top center',
+      },
+    });
+    timelineProjects.fromTo(
+      '.content-projects-wrapper > h1',
+      { opacity: 0, y: -30 },
+      { opacity: 1, y: 0, duration: 0.6, delay: 0.5 }
+    );
+    timelineProjects.fromTo(
+      '.content-projects-one',
+      { opacity: 0, y: -30 },
+      { opacity: 1, y: 0, duration: 0.3 }
+    );
+
+    timelineProjects.fromTo(
+      '.content-projects-two',
+      { opacity: 0, y: -30 },
+      { opacity: 1, y: 0, duration: 0.3 }
+    );
+    timelineProjects.fromTo(
+      '.content-projects-three',
+      { opacity: 0, y: -30 },
+      { opacity: 1, y: 0, duration: 0.3 }
+    );
+    timelineProjects.fromTo(
+      '.content-projects-four',
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.3 }
+    );
+    timelineProjects.fromTo(
+      '.content-projects-five',
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.3 }
+    );
+    timelineProjects.fromTo(
+      '.content-projects-six',
+      { opacity: 0, y: 30 },
+      { opacity: 1, y: 0, duration: 0.3 }
+    );
   }, []);
   return (
     <div ref={ref} className="App">

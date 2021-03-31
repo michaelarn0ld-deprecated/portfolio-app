@@ -40,16 +40,10 @@
   cursor: pointer;
   position: absolute;
   left: 0;
+  letter-spacing: 1px;
 }
-
-.navbar-left-media-links {
-  color: #000;
-  transition: all 0.5s ease;
-}
-
-.navbar-left-media-links:hover {
-  color: #4facfe;
-  transition: all 0.5s ease;
+.navbar-left > i {
+  margin-right: 10px;
 }
 
 .fab {

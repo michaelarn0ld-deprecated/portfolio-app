@@ -5,7 +5,7 @@ const Projects = ({ id }) => {
   return (
     <div id={id} className="content-projects-wrapper">
       <h1>projects</h1>
-      <div className="content-projects-items">
+      <div className="content-projects-items-bin-one">
         <div className="content-projects-one">
           <div className="project-img"></div>
           <div className="project-description">
@@ -36,14 +36,14 @@ const Projects = ({ id }) => {
           <div className="project-img"></div>
         </div>
       </div>
-      <div className="content-projects-items">
-        <div className="content-projects-one">
+      <div className="content-projects-items-bin-two">
+        <div className="content-projects-four">
           <div className="project-img"></div>
         </div>
-        <div className="content-projects-two">
+        <div className="content-projects-five">
           <div className="project-img"></div>
         </div>
-        <div className="content-projects-three">
+        <div className="content-projects-six">
           <div className="project-img"></div>
         </div>
       </div>
