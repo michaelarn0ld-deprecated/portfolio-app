@@ -88,21 +88,26 @@
         margin-top: 10px;
       }
 
-      & > a {
-        color: white;
-        text-decoration: none;
+      & > div {
         display: flex;
-        justify-content: center;
-        align-self: center;
-        width: 65%;
-        padding: 15px;
-        border: 2px solid #00ffff;
-        border-radius: 500px;
-        transition: 500ms;
-        margin-bottom: 10px;
-        &:hover {
-          background-color: #00ffff;
+        width: 100%;
+        justify-content: space-evenly;
+        & > a {
+          color: white;
+          width: 40%;
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-self: center;
+          padding: 9px;
+          border: 2px solid #00ffff;
+          border-radius: 500px;
           transition: 500ms;
+          margin-bottom: 10px;
+          &:hover {
+            background-color: #00ffff;
+            transition: 500ms;
+          }
         }
       }
     }

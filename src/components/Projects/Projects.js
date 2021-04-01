@@ -19,13 +19,22 @@ const Projects = ({ id }) => {
               This app utilizes a REST API to provide current and forecasted
               weather conditions.
             </h4>
-            <a
-              href="https://michaelarn0ld.github.io/weather-app/"
-              target="_blank"
-              className="navbar-left-media-links"
-            >
-              <h2>Visit Website </h2>
-            </a>
+            <div className="content-projects-one-live-links">
+              <a
+                href="https://github.com/michaelarn0ld/weather-app"
+                target="_blank"
+                className="navbar-left-media-links"
+              >
+                <h3>View Code</h3>
+              </a>
+              <a
+                href="https://michaelarn0ld.github.io/weather-app/"
+                target="_blank"
+                className="navbar-left-media-links"
+              >
+                <h3>View Site</h3>
+              </a>
+            </div>
           </div>
         </div>
         {/* -------------------------------------- */}

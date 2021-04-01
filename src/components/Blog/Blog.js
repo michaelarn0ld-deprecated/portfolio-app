@@ -8,7 +8,7 @@ const Blog = ({ id }) => {
       <h1>blog</h1>
       <div className="content-blog-items-bin-one">
         <div className="content-blog-one">
-          <div className="project-img"></div>
+          <div className="project-img one"></div>
           <a
             href="https://michaelarn0ld.medium.com/i-fell-in-love-with-code-leaping-from-chemical-engineering-to-software-development-9ccac9f430a7"
             target="_blank"
@@ -27,10 +27,40 @@ const Blog = ({ id }) => {
         </div>
         {/* -------------------------------------- */}
         <div className="content-blog-two">
-          <div className="project-img"></div>
+          <div className="project-img two"></div>
+          <a
+            href="https://michaelarn0ld.medium.com/i-fell-in-love-with-code-leaping-from-chemical-engineering-to-software-development-9ccac9f430a7"
+            target="_blank"
+            className="navbar-left-media-links"
+          >
+            <div className="project-description">
+              <h1>
+                <i class="fas fa-grin-beam"></i>
+              </h1>
+              <h3>
+                JavaScript performance - A dynamically typed language that is
+                blazing fast.
+              </h3>
+            </div>
+          </a>
         </div>
         <div className="content-blog-three">
-          <div className="project-img"></div>
+          <div className="project-img three"></div>
+          <a
+            href="https://michaelarn0ld.medium.com/i-fell-in-love-with-code-leaping-from-chemical-engineering-to-software-development-9ccac9f430a7"
+            target="_blank"
+            className="navbar-left-media-links"
+          >
+            <div className="project-description">
+              <h1>
+                <i class="fas fa-brain"></i>
+              </h1>
+              <h3>
+                First principles thinking - Studying engineering permanently
+                transformed the way I view the world.
+              </h3>
+            </div>
+          </a>
         </div>
       </div>
       <div className="content-blog-items-bin-two">
