@@ -7,7 +7,7 @@ const Projects = ({ id }) => {
       <h1>projects</h1>
       <div className="content-projects-items-bin-one">
         <div className="content-projects-one">
-          <div className="project-img"></div>
+          <div className="project-img-one"></div>
           <div className="project-description">
             <h1>
               <i class="fas fa-cloud-sun-rain"></i>
@@ -39,10 +39,16 @@ const Projects = ({ id }) => {
         </div>
         {/* -------------------------------------- */}
         <div className="content-projects-two">
-          <div className="project-img"></div>
+          <div className="project-img-two"></div>
+          <div className="project-description">
+            <h1>
+              <i class="fas fa-project-diagram"></i>
+            </h1>
+            <h3>Pathfinder Application</h3>
+          </div>
         </div>
         <div className="content-projects-three">
-          <div className="project-img"></div>
+          <div className="project-img-one"></div>
         </div>
       </div>
       <div className="content-projects-items-bin-two">
