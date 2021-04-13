@@ -14,12 +14,12 @@ const Projects = ({ id }) => {
             </h1>
             <h3>Weather Application</h3>
           </div>
-          <div className="content-projects-one-live">
+          <div className="content-projects-live">
             <h4>
-              This app utilizes a REST API to provide current and forecasted
-              weather conditions.
+              This app utilizes an external API to provide current and
+              forecasted weather conditions.
             </h4>
-            <div className="content-projects-one-live-links">
+            <div className="content-projects-live-links">
               <a
                 href="https://github.com/michaelarn0ld/weather-app"
                 target="_blank"
@@ -37,7 +37,6 @@ const Projects = ({ id }) => {
             </div>
           </div>
         </div>
-        {/* -------------------------------------- */}
         <div className="content-projects-two">
           <div className="project-img-two"></div>
           <div className="project-description">
@@ -45,6 +44,28 @@ const Projects = ({ id }) => {
               <i class="fas fa-project-diagram"></i>
             </h1>
             <h3>Pathfinder Application</h3>
+          </div>
+          <div className="content-projects-live">
+            <h4>
+              This is a visualization of the Traveling Salesman problem, which
+              minimizes the distance to visit all nodes in a graph.
+            </h4>
+            <div className="content-projects-live-links">
+              <a
+                href="https://github.com/michaelarn0ld/pathfinder-app"
+                target="_blank"
+                className="navbar-left-media-links"
+              >
+                <h3>View Code</h3>
+              </a>
+              <a
+                href="https://michaelarn0ld.github.io/pathfinder-app/"
+                target="_blank"
+                className="navbar-left-media-links"
+              >
+                <h3>View Site</h3>
+              </a>
+            </div>
           </div>
         </div>
         <div className="content-projects-three">

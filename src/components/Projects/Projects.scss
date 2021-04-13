@@ -21,7 +21,14 @@
   margin-top: 2vh;
 
   .content-projects-one:hover {
-    .content-projects-one-live {
+    .content-projects-live {
+      opacity: 1;
+      transition: 500ms;
+    }
+  }
+
+  .content-projects-two:hover {
+    .content-projects-live {
       opacity: 1;
       transition: 500ms;
     }
@@ -74,7 +81,7 @@
         letter-spacing: 2px;
       }
     }
-    .content-projects-one-live {
+    .content-projects-live {
       position: absolute;
       top: 0;
       width: 100%;
