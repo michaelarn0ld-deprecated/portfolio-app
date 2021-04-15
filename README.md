@@ -1,4 +1,4 @@
-# Personal Project Portfolio
+# My Portfolio
 
 https://michaelarn0ld.github.io/portfolio-app/
 
@@ -6,7 +6,7 @@ https://michaelarn0ld.github.io/portfolio-app/
 
 Showcase projects and personally developed applications.
 
-A React application to serve as a portfolio for potential clients and to present my work as a software developer.
+This simple web app is built with React to serve as a portfolio for potential clients and to present my work as a software developer.
 
 ---
 
@@ -18,7 +18,7 @@ A React application to serve as a portfolio for potential clients and to present
 
 ## Contributors
 
-- Michael Arnold <marnolddevelop@gmail.com>
+- Michael Arnold: <marnolddevelop@gmail.com>
 
 ## References
 
