@@ -13,21 +13,21 @@ const About = ({ id }) => {
             <i class="fas fa-rocket"></i>
           </h1>
           <h4>Quick</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <p>My apps prioritize performance to optimize conversion rates.</p>
         </div>
         <div className="content-about-middle-two">
           <h1>
             <i class="fas fa-mobile-alt"></i>
           </h1>
           <h4>Responsive</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <p>I develop apps to deliver the best experience on all devices.</p>
         </div>
         <div className="content-about-middle-three">
           <h1>
             <i class="fas fa-lightbulb"></i>
           </h1>
           <h4>Intuitive</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <p>My simple interfaces are deisgned to enhance user experience. </p>
         </div>
         <div className="content-about-middle-four">
           <h1>

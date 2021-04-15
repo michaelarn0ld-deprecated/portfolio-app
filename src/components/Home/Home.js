@@ -11,14 +11,12 @@ const Home = ({ id }) => {
           <img src={img} alt="Selfie" />
         </div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde corrupti
-          voluptates cum voluptatum eaque in accusantium, aliquam doloribus,
-          reiciendis sint architecto ab ipsa saepe? Optio cumque similique
-          quaerat fugiat, facilis quos error provident eos ab est odit ad, quo
-          eius voluptates, itaque facere minima eaque? Esse distinctio inventore
-          alias qui quasi quos magnam soluta, nulla voluptatibus cum mollitia
-          omnis adipisci aliquam animi modi, nihil tempora a. Incidunt
-          consectetur voluptatum eaque totam.
+          Hey! I'm Michael. I am an Austin-based software developer who
+          specializes in building applications for the web. Most recently, I
+          worked in water resources engineering where I built custom tools to
+          clean, analyze, and visualize water quality data. My professional and
+          academic interests include web development, machine learning, data
+          science, and computational fluid dynamics.
         </p>
       </div>
       <div className="content-home-lower-content">
