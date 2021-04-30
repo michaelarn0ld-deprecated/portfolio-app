@@ -15,8 +15,8 @@ const Home = ({ id }) => {
           specializes in building applications for the web. Most recently, I
           worked in water resources engineering where I built custom tools to
           clean, analyze, and visualize water quality data. My professional and
-          academic interests include web development, machine learning, data
-          science, and computational fluid dynamics.
+          academic interests include web development, artificial intelligence,
+          deep learning, and data science.
         </p>
       </div>
       <div className="content-home-lower-content">
