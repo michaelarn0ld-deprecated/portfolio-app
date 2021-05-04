@@ -37,10 +37,7 @@ const Blog = ({ id }) => {
               <h1>
                 <i class="fas fa-grin-beam"></i>
               </h1>
-              <h3>
-                JavaScript performance - A dynamically typed language that is
-                blazing fast.
-              </h3>
+              <h3>C++ Data Structures - Stacks, queues, sets, and maps.</h3>
             </div>
           </a>
         </div>
