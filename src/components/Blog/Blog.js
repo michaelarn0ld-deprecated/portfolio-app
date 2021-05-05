@@ -29,7 +29,7 @@ const Blog = ({ id }) => {
         <div className="content-blog-two">
           <div className="project-img two"></div>
           <a
-            href="https://michaelarn0ld.medium.com/i-fell-in-love-with-code-leaping-from-chemical-engineering-to-software-development-9ccac9f430a7"
+            href="https://dev.to/michaelarn0ld/c-data-structures-stacks-queues-sets-and-maps-28ap"
             target="_blank"
             className="navbar-left-media-links"
           >
